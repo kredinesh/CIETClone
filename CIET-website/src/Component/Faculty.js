@@ -64,7 +64,7 @@ const Faculty = (props) => {
 
                     <tr>
                         <th>Id</th>
-                        <th>Names</th>
+                        <th>Name</th>
                         <th>Designation</th>
                         <th>Edit or Delete</th>
                     </tr>
