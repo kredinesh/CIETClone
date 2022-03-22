@@ -39,7 +39,7 @@ const Department=()=>{
                 </div>
                 <div className="col-sm-4 mt-3">
                 <img src={IT} width="200px"/>
-                    <h5><a href="">INFORMATION TECHNOLOGY</a></h5>
+                    <h5><a href="/it">INFORMATION TECHNOLOGY</a></h5>
                 </div>
             </div>
         </div>

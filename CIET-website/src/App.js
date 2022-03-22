@@ -11,19 +11,23 @@ import CIET from './Image component/ciet_logo.jpg'
 import CSE from './Component/Dept_faculties/CSE';
 import CIVIL from './Component/Dept_faculties/CIVIL';
 import MECH from './Component/Dept_faculties/MECH';
+import IT from './Component/Dept_faculties/IT';
 
 
-function App() {
+function App() 
+{
   return (
     <div className="New">
-      <h1 align="center"><marquee>COIMBATORE INSTITUTE OF ENGINEERING AND TECHNOLOGY</marquee></h1><br/>
+      <h1 ><marquee>COIMBATORE INSTITUTE OF ENGINEERING AND TECHNOLOGY</marquee></h1><br/>
 
-      <div className="wrapper">
+      { <div className="wrapper">
         <header>
           <nav className="navbar navbar-expand-sm navbar-light"> <a href="" className="navbar-brand">
             <img src={CIET} width="130px" alt="Ciet logo"></img> </a>
             <button className="navbar-toggler" type="button" data-toggle="dropdown" data-target="#MynavBar"><span className="navbar-toggler-icon"></span></button>
-
+          
+          {/*  Using Navigation  codes  */}
+          {/* {/
             <div className="collapse navbar-collapse" id="MynavBar">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
@@ -35,23 +39,25 @@ function App() {
                 <li className="nav-item">
                   <a href='/department' className="nav-link">Department</a>
                 </li>
-              </ul>
+              </ul> }
 
-            </div>
-
+            </div> }
+{/ */}
 
           </nav>
         </header>
-      </div> 
+      </div>  }
       <BrowserRouter>
-        <div exact align="right" >
-          <Link to="location">Location</Link> | <Link to="faculty">Faculty</Link>  |   <Link to="department">Department</Link><hr />
+        <div exact align="center" >
+          <Link to ="home">Home</Link> | <Link to="location">Location</Link> | <Link to="faculty">Faculty</Link>  |   <Link to="department">Department</Link><hr />
         </div>
         <div >
           <Switch>
+            <Route path="/home" component={Home}></Route>
             <Route path="/cse" component={CSE}></Route>
             <Route path="/civil" component={CIVIL}></Route>
             <Route path="/mech" component={MECH}></Route>
+            <Route path="/it" component={IT}></Route>
             <Route path="/location" component={Location}></Route>
             <Route path="/home" component={Home}></Route>
             <Route path="/faculty" component={Faculty}></Route>
