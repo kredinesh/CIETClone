@@ -18,7 +18,8 @@ function App()
 {
   return (
     <div className="New">
-      <h1 ><marquee>COIMBATORE INSTITUTE OF ENGINEERING AND TECHNOLOGY</marquee></h1><br/>
+      <h1 align="center">COIMBATORE INSTITUTE OF ENGINEERING AND TECHNOLOGY</h1><br/>
+      <h2 align="center">Thondamuthur(via),Narasipuram, Coimbatore -641 109</h2><br/>
 
       { <div className="wrapper">
         <header>
