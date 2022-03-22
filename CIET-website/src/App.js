@@ -16,7 +16,7 @@ import MECH from './Component/Dept_faculties/MECH';
 function App() {
   return (
     <div className="New">
-      <h1 align="center">CIET COLLEGE</h1><br/>
+      <h1 align="center"><marquee>CIET COLLEGE</marquee></h1><br/>
 
       <div className="wrapper">
         <header>

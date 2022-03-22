@@ -19,7 +19,7 @@ const Faculty = (props) => {
 
     const filteredStaff = staff.filter( s =>
         s.name.includes(filterText) ||
-        s.id.includes(filterText);
+        s.id.includes(filterText) ||
         s.designation.includes(filterText)
         )
     const staffToDisplay = filterText ? filteredStaff : staff;
